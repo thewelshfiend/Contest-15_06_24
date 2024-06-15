@@ -59,12 +59,12 @@ h1 {
     box-sizing: border-box;
     width: 9.7rem;
     height: 3rem;
-    font-weight: 400;
 }
 
 .inc-dec-btn {
     background-color: rgba(245, 245, 245, 0.763);
     border: none;
+    font-weight: 600;
 
     &:hover {
         background-color: white;
@@ -73,6 +73,7 @@ h1 {
 
 #clear-btn {
     background-color: black;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.574);
     border: 1px solid rgba(255, 255, 255, 0.574);
 
@@ -86,4 +87,33 @@ h1 {
 .inc-dec-btn,
 #clear-btn {
     font-size: 1.1rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 666px) {
+    h1 {
+        text-align: center;
+    }
+
+    #parent {
+        width: 100%;
+        text-align: center;
+    }
+
+    #error {
+        text-align: center;
+    }
+
+    #btn-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inc-dec-btn,
+    #clear-btn {
+        margin-bottom: 1.3rem;
+    }
 }
