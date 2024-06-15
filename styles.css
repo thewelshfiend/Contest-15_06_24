@@ -63,11 +63,11 @@ h1 {
 }
 
 .inc-dec-btn {
-    background-color: white;
+    background-color: rgba(245, 245, 245, 0.763);
     border: none;
 
     &:hover {
-        background-color: rgba(255, 255, 255, 0.285);
+        background-color: white;
     }
 }
 
