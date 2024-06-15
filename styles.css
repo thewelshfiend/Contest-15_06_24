@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: black;
+    padding: 70px 50px;
+}
+
+h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    letter-spacing: 0.3rem;
+}
+
+#parent {
+    display: inline-block;
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+
+    &>p {
+        display: inline-block;
+        color: white;
+        font-weight: 200;
+    }
+
+    &>pre {
+        display: inline-block;
+        color: white;
+    }
+
+    &>span {
+        color: white;
+        font-weight: 500;
+    }
+}
+
+#error {
+    color: #984044;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+#btn-container {
+    box-sizing: border-box;
+    width: 40%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.3rem;
+}
+
+.inc-dec-btn,
+#clear-btn {
+    box-sizing: border-box;
+    width: 9.7rem;
+    height: 3rem;
+    font-weight: 400;
+}
+
+.inc-dec-btn {
+    background-color: white;
+    border: none;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.285);
+    }
+}
+
+#clear-btn {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.574);
+    border: 1px solid rgba(255, 255, 255, 0.574);
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.183);
+    }
+}
+
+#parent,
+#error,
+.inc-dec-btn,
+#clear-btn {
+    font-size: 1.1rem;
+}
